@@ -15,11 +15,11 @@ public class Main {
                 throw new IllegalArgumentException("Введены некорректные данные");
             }
 
-            System.out.println("Сложение: " + Calculator.add(num1, num2));
-            System.out.println("Вычитание: " + Calculator.sub(num1, num2));
-            System.out.println("Умножение: " + Calculator.mul(num1, num2));
-            System.out.println("Деление: " + Calculator.div(num1, num2));
-            System.out.println("30% от 90: " + Calculator.percentage(90, 30));
+            System.out.printf("Сложение: %.2f\n", Calculator.add(num1, num2));
+            System.out.printf("Вычитание: %.2f\n", Calculator.sub(num1, num2));
+            System.out.printf("Умножение:  %.2f\n", Calculator.mul(num1, num2));
+            System.out.printf("Деление:  %.2f\n", Calculator.div(num1, num2));
+            System.out.printf("30%% от 90:  %.2f\n", Calculator.percentage(90, 30));
 
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
