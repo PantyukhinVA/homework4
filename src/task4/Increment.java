@@ -1,4 +1,4 @@
-package Task4;
+package task4;
 
 public class Increment {
     private static int count = 0;
